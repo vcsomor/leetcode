@@ -22,6 +22,6 @@ func TestIt(t *testing.T) {
 		{s: "abcda", t: "aebcda", expected: 'e'},
 	}
 	for _, c := range cases {
-		assert.Equal(t, c.expected, findTheDifferenceV2(c.s, c.t))
+		assert.Equal(t, c.expected, findTheDifference(c.s, c.t))
 	}
 }

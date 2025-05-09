@@ -8,6 +8,10 @@
 package prob_00389
 
 func findTheDifference(s string, t string) byte {
+	return findTheDifferenceXor(s, t)
+}
+
+func findTheDifferenceTrivial(s string, t string) byte {
 	if len(t) == 1 {
 		return t[0]
 	}
@@ -23,7 +27,7 @@ func findTheDifference(s string, t string) byte {
 	return 0
 }
 
-func findTheDifferenceV2(s string, t string) byte {
+func findTheDifferenceXor(s string, t string) byte {
 	var result byte = 0
 
 	for _, letter := range s {
