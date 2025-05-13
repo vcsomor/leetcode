@@ -1,4 +1,4 @@
-package prob_template
+package prob_00657
 
 func judgeCircle(moves string) bool {
 	var ups, downs, lefts, rights int
